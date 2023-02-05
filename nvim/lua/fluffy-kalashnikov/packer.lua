@@ -12,8 +12,8 @@ return require('packer').startup(function(use)
   use {'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = { {'nvim-lua/plenary.nvim'} }}
   use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use { 'rose-pine/neovim', as = 'rose-pine', config = function()
-    require("rose-pine").setup()
-    vim.cmd('colorscheme rose-pine')
+      require("rose-pine").setup()
+      vim.cmd('colorscheme rose-pine')
   end}
   use {
     'VonHeikemen/lsp-zero.nvim',
