@@ -1,5 +1,6 @@
+require("core.options")
 require("core.bootstrap")
 require("core.mappings")
-require("core.options")
 require("core.plugins")
-require("configs")
+require("theme")
+require("config")

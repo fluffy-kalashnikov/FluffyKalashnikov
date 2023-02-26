@@ -1,9 +1,6 @@
 require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use { 
-        'nvim-treesitter/nvim-treesitter', run = function() 
-        require('nvim-treesitter.install').update({ with_sync = true }) 
-    end}
+    use { "catppuccin/nvim", as = "catppuccin" }
     use {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v2.x",
@@ -12,6 +9,11 @@ require('packer').startup(function(use)
             "nvim-tree/nvim-web-devicons",
             "MunifTanjim/nui.nvim",
         }
+    }
+    use { 
+        'nvim-treesitter/nvim-treesitter', run = function() 
+            require('nvim-treesitter.install').update({ with_sync = true }) 
+        end
     }
     use {
         'VonHeikemen/lsp-zero.nvim',
