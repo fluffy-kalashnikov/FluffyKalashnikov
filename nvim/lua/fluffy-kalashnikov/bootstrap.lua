@@ -5,11 +5,11 @@ if vim.fn.empty(vim.fn.glob(packer_path)) > 0 then
     print "Cloning packer.nvim..."
     vim.fn.delete(packer_path, "rf")
     vim.fn.system{
-        'git', 
-        'clone', 
-        '--depth', 
-        '1', 
-        'https://github.com/wbthomason/packer.nvim', 
+        'git',
+        'clone',
+        '--depth',
+        '1',
+        'https://github.com/wbthomason/packer.nvim',
         packer_path
     }
     vim.cmd [[packadd packer.nvim]]
@@ -17,7 +17,7 @@ if vim.fn.empty(vim.fn.glob(packer_path)) > 0 then
 end
 
 if packer_cloned then
-    require("core.plugins")
+    require("fluffy-kalashnikov.plugins")
     require("packer").sync()
 end
 

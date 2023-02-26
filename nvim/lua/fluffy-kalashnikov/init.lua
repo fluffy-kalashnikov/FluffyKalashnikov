@@ -1,0 +1,5 @@
+require("fluffy-kalashnikov.options")
+require("fluffy-kalashnikov.bootstrap")
+require("fluffy-kalashnikov.mappings")
+require("fluffy-kalashnikov.plugins")
+require("fluffy-kalashnikov.theme")

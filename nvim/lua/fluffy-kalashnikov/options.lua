@@ -17,7 +17,7 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 50
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "90"
 
 if vim.g.neovide then
     vim.g.neovide_fullscreen = true

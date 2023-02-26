@@ -1,4 +1,3 @@
-
 --https://github.com/catppuccin/nvim#configuration
 require("catppuccin").setup({
     flavour = "macchiato",

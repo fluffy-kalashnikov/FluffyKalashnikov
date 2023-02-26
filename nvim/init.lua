@@ -1,6 +1,1 @@
-require("core.options")
-require("core.bootstrap")
-require("core.mappings")
-require("core.plugins")
-require("theme")
-require("config")
+require("fluffy-kalashnikov")

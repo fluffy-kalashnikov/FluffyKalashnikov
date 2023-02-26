@@ -4,14 +4,15 @@ require('packer').startup(function(use)
     use {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v2.x",
-        requires = { 
+        requires = {
             "nvim-lua/plenary.nvim",
             "nvim-tree/nvim-web-devicons",
             "MunifTanjim/nui.nvim",
         }
     }
-    use { 
-        'nvim-treesitter/nvim-treesitter', run = function() 
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function() 
             require('nvim-treesitter.install').update({ with_sync = true }) 
         end
     }
